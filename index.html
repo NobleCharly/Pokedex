@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body class="nunito">
+    <section class="header">
+        <img class="header-img" src="./assets/wallpaper1.png" alt="">
+    </section>
+    <main>
+        <div class="specs-pokemon">
+            <div class="stats-container">
+                <h2>Estadisticas</h2>
+                <ul id="pokeStats">
+                </ul>
+            </div>
+            <div class="moves-container">
+                <h2>Movimientos</h2>
+                <ol id="pokeMoves">
+                   
+                </ol>
+            </div>
+        </div>
+        <div class="pokemon-search">
+            <div class="input-container">
+                <input type="text" placeholder="Pokemon Name or ID" id="pokeInput" name="pokeInput">
+                <button  id="search-button" onclick="buscarPokemon()">Buscar</button>
+            </div>
+            <div class="card-pokemon">
+                <h2 id="pokeId">#000</h2>
+                <img id="pokeImg" src="./assets/unknown.png" alt="">
+                <h2 id="pokeName">Nombre</h2>
+                <p class="type-label" id="pokeType">Type</p>
+            </div>
+        </div>
+        <div class="card-pokemon-backside">
+            <h2>Shiny</h2>
+            <img  id="pokeImgBackside" src="./assets/pokeball.png" alt="pokeball">
+        </div>
+    </main>
+
+    <footer>
+        <script src="./index.js"></script>
+    </footer>
+</body>
+
+</html>
